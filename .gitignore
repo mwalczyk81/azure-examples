@@ -52,3 +52,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs/AzureExamples/CopilotIndices/0.2.1657.32929
+/.vs/AzureExamples/DesignTimeBuild
+/.vs/AzureExamples/FileContentIndex
+/.vs/AzureExamples/v17/TestStore/0
+/.vs/AzureExamples/v17
