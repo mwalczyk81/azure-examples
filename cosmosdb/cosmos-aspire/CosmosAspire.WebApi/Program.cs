@@ -1,4 +1,4 @@
-using Azure.Cosmos;
+using Microsoft.Azure.Cosmos;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);

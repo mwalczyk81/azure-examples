@@ -4,11 +4,11 @@ using System.Net.Http;
 
 namespace Examples.ApiTests;
 
-public class WebApiSmokeTests : IClassFixture<WebApplicationFactory<AspireWeb.WebApi.Program>>
+public class WebApiSmokeTests : IClassFixture<WebApplicationFactory<Program>>
 {
-    private readonly WebApplicationFactory<AspireWeb.WebApi.Program> _factory;
+    private readonly WebApplicationFactory<Program> _factory;
 
-    public WebApiSmokeTests(WebApplicationFactory<AspireWeb.WebApi.Program> factory)
+    public WebApiSmokeTests(WebApplicationFactory<Program> factory)
     {
         _factory = factory;
     }
