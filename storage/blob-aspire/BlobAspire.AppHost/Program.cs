@@ -3,6 +3,6 @@ using Aspire.Hosting.ApplicationModel;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var webApi = builder.AddProject<Projects.BlobAspire_WebApi>("webapi");
+builder.AddProject("webapi", "../BlobAspire.WebApi/BlobAspire.WebApi.csproj");
 
 builder.Build().Run();

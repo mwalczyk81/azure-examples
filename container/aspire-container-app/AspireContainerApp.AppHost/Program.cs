@@ -2,6 +2,6 @@ using Aspire.Hosting;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.AspireContainerApp_WebApi>("webapi");
+builder.AddProject("webapi", "../AspireContainerApp.WebApi/AspireContainerApp.WebApi.csproj");
 
 builder.Build().Run();

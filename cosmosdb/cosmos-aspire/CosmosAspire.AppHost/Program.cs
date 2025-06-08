@@ -2,6 +2,6 @@ using Aspire.Hosting;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var webApi = builder.AddProject<Projects.CosmosAspire_WebApi>("webapi");
+builder.AddProject("webapi", "../CosmosAspire.WebApi/CosmosAspire.WebApi.csproj");
 
 builder.Build().Run();

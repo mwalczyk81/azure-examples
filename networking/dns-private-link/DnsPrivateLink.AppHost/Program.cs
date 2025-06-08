@@ -2,9 +2,9 @@ using Aspire.Hosting;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var dns = builder.AddProject<Projects.FakeDnsApi>("dnsservice");
+var dns = builder.AddProject("dnsservice", "../FakeDnsApi/FakeDnsApi.csproj");
 
-builder.AddProject<Projects.DnsPrivateLink_WebApi>("webapi")
+builder.AddProject("webapi", "../DnsPrivateLink.WebApi/DnsPrivateLink.WebApi.csproj")
     .WithReference(dns);
 
 builder.Build().Run();
