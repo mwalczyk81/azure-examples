@@ -2,25 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureExamples.AppHost", "src\samples\AzureExamples.AppHost\AzureExamples.AppHost.csproj", "{1CC4BEDC-2533-4F25-B0C6-4C6052BB67C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureExamples.AppHost", "src\samples\AzureExamples.AppHost\AzureExamples.AppHost.csproj", "{1CC4BEDC-2533-4F25-B0C6-4C6052BB67C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobAspire.WebApi", "src\storage\blob-aspire\BlobAspire.WebApi\BlobAspire.WebApi.csproj", "{A2011CA2-3A00-46AA-BC15-888FE8E86837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobAspire.WebApi", "src\storage\blob-aspire\BlobAspire.WebApi\BlobAspire.WebApi.csproj", "{A2011CA2-3A00-46AA-BC15-888FE8E86837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosAspire.WebApi", "src\cosmosdb\cosmos-aspire\CosmosAspire.WebApi\CosmosAspire.WebApi.csproj", "{6C55CD67-24F2-45A2-8736-FE8834260900}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireWeb.WebApi", "src\webapp\aspire-web\AspireWeb.WebApi\AspireWeb.WebApi.csproj", "{1127D55F-71C4-4486-A553-EF68A017540D}"
-        {45648EB4-C8C8-4673-9C25-89F2F8DB12BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {45648EB4-C8C8-4673-9C25-89F2F8DB12BB}.Release|Any CPU.Build.0 = Release|Any CPU
-        {B3717949-7E04-4C65-8F81-266F1E5F4A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {B3717949-7E04-4C65-8F81-266F1E5F4A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {B3717949-7E04-4C65-8F81-266F1E5F4A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {B3717949-7E04-4C65-8F81-266F1E5F4A60}.Release|Any CPU.Build.0 = Release|Any CPU
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureExamples.AppHost", "samples\AzureExamples.AppHost\AzureExamples.AppHost.csproj", "{1CC4BEDC-2533-4F25-B0C6-4C6052BB67C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosAspire.WebApi", "src\cosmosdb\cosmos-aspire\CosmosAspire.WebApi\CosmosAspire.WebApi.csproj", "{6C55CD67-24F2-45A2-8736-FE8834260900}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobAspire.WebApi", "storage\blob-aspire\BlobAspire.WebApi\BlobAspire.WebApi.csproj", "{A2011CA2-3A00-46AA-BC15-888FE8E86837}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosAspire.WebApi", "cosmosdb\cosmos-aspire\CosmosAspire.WebApi\CosmosAspire.WebApi.csproj", "{6C55CD67-24F2-45A2-8736-FE8834260900}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWeb.WebApi", "webapp\aspire-web\AspireWeb.WebApi\AspireWeb.WebApi.csproj", "{1127D55F-71C4-4486-A553-EF68A017540D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWeb.WebApi", "src\webapp\aspire-web\AspireWeb.WebApi\AspireWeb.WebApi.csproj", "{1127D55F-71C4-4486-A553-EF68A017540D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.ApiTests", "tests\Examples.ApiTests\Examples.ApiTests.csproj", "{F4C7028F-C0D0-4B30-9498-44B330D614D6}"
 EndProject

@@ -1,12 +1,12 @@
 {
   "profiles": {
-    "BlobAspire.WebApi": {
+    "CosmosAspire.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:59301;http://localhost:59302"
+      "applicationUrl": "https://localhost:54981;http://localhost:54982"
     }
   }
 }
