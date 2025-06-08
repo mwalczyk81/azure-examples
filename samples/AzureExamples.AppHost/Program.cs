@@ -3,7 +3,7 @@ using Aspire.Hosting.ApplicationModel;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddDashboard();
+builder .AddDashboard();
 
 builder.AddProject<Projects.BlobAspire_WebApi>("blobapi");
 builder.AddProject<Projects.CosmosAspire_WebApi>("cosmosapi");

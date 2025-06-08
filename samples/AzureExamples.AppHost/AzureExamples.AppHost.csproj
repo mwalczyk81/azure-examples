@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting" Version="8.0.0" />
+    <PackageReference Include="Aspire.Hosting" Version="9.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../storage/blob-aspire/BlobAspire.WebApi/BlobAspire.WebApi.csproj" />
