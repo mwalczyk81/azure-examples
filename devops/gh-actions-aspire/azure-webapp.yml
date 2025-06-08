@@ -1,0 +1,33 @@
+name: Build and Deploy Aspire App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore
+        run: dotnet restore azure-examples.sln
+      - name: Build
+        run: dotnet build azure-examples.sln --configuration Release --no-restore
+      - name: Test
+        run: dotnet test azure-examples.sln --configuration Release --no-build
+      - name: Publish AppHost
+        run: dotnet publish samples/AzureExamples.AppHost/AzureExamples.AppHost.csproj -c Release -o publish
+      - name: Compress
+        run: zip -r app.zip publish
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+      - name: Deploy to Web App
+        run: az webapp deploy --resource-group ${{ secrets.AZURE_RG }} --name ${{ secrets.AZURE_WEBAPP_NAME }} --src-path app.zip --type zip
