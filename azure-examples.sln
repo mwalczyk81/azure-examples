@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.ApiTests", "tests\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureExamples.Tests", "tests\AzureExamples.Tests\AzureExamples.Tests.csproj", "{F0D367A2-F70B-4F2E-B842-888D222148D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C7F0838-747C-43DB-8F4D-A05CFF5D6DE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4C7028F-C0D0-4B30-9498-44B330D614D6} = {0C7F0838-747C-43DB-8F4D-A05CFF5D6DE2}
+		{F0D367A2-F70B-4F2E-B842-888D222148D2} = {0C7F0838-747C-43DB-8F4D-A05CFF5D6DE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B4680C5-B872-4C3E-AD9F-FC0692EFF6B4}
