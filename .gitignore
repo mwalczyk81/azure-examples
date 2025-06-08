@@ -57,3 +57,4 @@ nunit-*.xml
 /.vs/AzureExamples/FileContentIndex
 /.vs/AzureExamples/v17/TestStore/0
 /.vs/AzureExamples/v17
+/.vs
