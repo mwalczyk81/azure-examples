@@ -1,6 +1,7 @@
 # Azure Examples
 
 This repository contains small samples for common Azure workloads. The `src` folder hosts a minimal .NET example alongside additional folders for various services.
+Each sample includes an **AppHost** project marked with `<IsAspireHost>true>`. The host references its API project using `builder.AddProject<Projects.MyApi>("myapi")` as described in the [Add Aspire to an existing app guide](https://learn.microsoft.com/dotnet/aspire/get-started/add-aspire-existing-app).
 
 ### Azure Examples Solution
 A combined .NET Aspire solution is provided in `azure-examples.sln`. Run the AppHost locally with:
