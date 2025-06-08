@@ -9,6 +9,13 @@ A combined .NET Aspire solution is provided in `azure-examples.sln`. Run the App
 ```bash
 dotnet run --project samples/AzureExamples.AppHost
 ```
+The Aspire dashboard requires environment variables specifying the port and OTLP endpoint:
+
+```bash
+ASPNETCORE_URLS=http://localhost:18888 \
+ASPIRE_DASHBOARD_OTLP_HTTP_ENDPOINT_URL=http://localhost:4318 \
+dotnet run --project samples/AzureExamples.AppHost
+```
 
 Run all tests with:
 
@@ -119,7 +126,7 @@ The `src` folder contains the `EventReader` example with tests under `tests`.
 Execute the tests with the .NET SDK:
 
 ```bash
-dotnet test AzureExamples.sln
+dotnet test azure-examples.sln
 ```
 
 The test project uses mocks and in-memory fakes to keep the sample independent from Azure services.
