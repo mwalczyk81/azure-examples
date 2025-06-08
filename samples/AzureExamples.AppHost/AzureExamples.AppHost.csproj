@@ -5,6 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <PropertyGroup>
+    <IsAspireHost>true</IsAspireHost>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting" Version="9.3.0" />
   </ItemGroup>
