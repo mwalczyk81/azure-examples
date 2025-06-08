@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWeb.WebApi", "src\web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.ApiTests", "tests\Examples.ApiTests\Examples.ApiTests.csproj", "{F4C7028F-C0D0-4B30-9498-44B330D614D6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureExamples.Tests", "tests\AzureExamples.Tests\AzureExamples.Tests.csproj", "{F0D367A2-F70B-4F2E-B842-888D222148D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{F4C7028F-C0D0-4B30-9498-44B330D614D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4C7028F-C0D0-4B30-9498-44B330D614D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4C7028F-C0D0-4B30-9498-44B330D614D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D367A2-F70B-4F2E-B842-888D222148D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D367A2-F70B-4F2E-B842-888D222148D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D367A2-F70B-4F2E-B842-888D222148D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D367A2-F70B-4F2E-B842-888D222148D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
